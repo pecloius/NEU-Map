@@ -7,13 +7,39 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, MKMapViewDelegate {
+    
+    
+    @IBOutlet weak var MyMapView: MKMapView!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        var myLat:CLLocationDegrees = 16.422689
+        var myLng:CLLocationDegrees = 102.815934
+        
+        var latDelta:CLLocationDegrees = 0.01
+        var lngDelta:CLLocationDegrees = 0.01
+        
+        
+        var theSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lngDelta)
+        var neuLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(myLat, myLng)
+        
+        var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(neuLocation, theSpan)
+        
+        self.MyMapView.setRegion(theRegion, animated: true)
+        
+        
+        
+        
+        
+    } // ViewDidLoad
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

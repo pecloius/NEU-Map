@@ -14,6 +14,7 @@
 		62A2B35E1D1B94FF00E277EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A2B35C1D1B94FF00E277EB /* LaunchScreen.storyboard */; };
 		62A2B3691D1B94FF00E277EB /* My_Map_NEUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2B3681D1B94FF00E277EB /* My_Map_NEUTests.swift */; };
 		62A2B3741D1B94FF00E277EB /* My_Map_NEUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2B3731D1B94FF00E277EB /* My_Map_NEUUITests.swift */; };
+		62A2B3821D1B961100E277EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A2B3811D1B961100E277EB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		62A2B36F1D1B94FF00E277EB /* My Map NEUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Map NEUUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A2B3731D1B94FF00E277EB /* My_Map_NEUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Map_NEUUITests.swift; sourceTree = "<group>"; };
 		62A2B3751D1B94FF00E277EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62A2B3811D1B961100E277EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A2B3821D1B961100E277EB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		62A2B3471D1B94FF00E277EB = {
 			isa = PBXGroup;
 			children = (
+				62A2B3811D1B961100E277EB /* MapKit.framework */,
 				62A2B3521D1B94FF00E277EB /* My Map NEU */,
 				62A2B3671D1B94FF00E277EB /* My Map NEUTests */,
 				62A2B3721D1B94FF00E277EB /* My Map NEUUITests */,
